@@ -1,60 +1,137 @@
-📊 Power BI Data Modeling | From Raw Data to an Analytical Model
-   
-Turning scattered business data into a structured, analysis-ready Power BI model.
+# 📊 Power BI Data Modeling Project
 
-✨ Project Overview
-This project focuses on data modeling in Microsoft Power BI. Starting with an Excel workbook containing multiple business datasets, the goal was to reorganize the data into a clearer analytical structure, separating fact tables from dimension tables and defining relationships that support reporting and analysis.
-The project includes a Power BI .pbix file, the original Excel dataset, and screenshots comparing the model before and after restructuring.
+### From Raw Data to a Structured & Efficient Data Model
 
-🔄 Before & After: Model Transformation
-Before — Source-oriented model
+![Power BI](https://img.shields.io/badge/Power%20BI-Data%20Modeling-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Power Query](https://img.shields.io/badge/Power%20Query-ETL-217346?style=for-the-badge)
+![DAX](https://img.shields.io/badge/DAX-Analytics-blue?style=for-the-badge)
 
-The starting model contained source-oriented tables for orders, customers, products, invoices, payments, shipments, inventory, campaigns, and more. This made the model harder to navigate and reason about.
-After — Structured analytical model
+## 📌 Project Overview
 
-The redesigned model groups analytical data into clearly named fact and dimension tables, with a dedicated date dimension and a separate measures table. The screenshot also shows active and inactive relationships used for different analytical paths.
-🧱 Data Model Architecture
-Layer	Tables visible in the final model	Purpose
-Facts	fact_sales, fact_order_process, fact_inventory, fact_campaign_spend, fact_promotion_coverage, fact_sales_targets	Capture sales, order processes, stock, marketing activity, promotions, and targets
-Dimensions	dim_customer, dim_product, dim_campaign, dim_geo, dim_order_flags, dim_date	Provide descriptive attributes for slicing and filtering
-Supporting	_measures, security	Organize DAX measures and regional security-related data
+This project demonstrates the process of transforming raw business data into a well-structured analytical data model using **Microsoft Power BI**.
 
+The main focus is on applying data modeling concepts to organize tables, establish meaningful relationships, and create a reliable foundation for business intelligence reporting.
 
-The final design uses star-schema principles, with multiple fact tables sharing dimensions where appropriate. It is best described as a multi-fact analytical model, rather than a single textbook star schema.
-🛠️ Skills & Techniques Demonstrated
-- Power Query: preparing and reshaping source data for modeling.
-- Dimensional Modeling: separating business events and numeric measures from descriptive attributes.
-- Data Relationships: configuring one-to-many relationships and managing multiple date paths.
-- Date Dimension: supporting calendar-based analysis through dim_date.
-- DAX Organization: maintaining calculations in a dedicated _measures table.
-- Business Data Integration: connecting sales, customers, products, inventory, marketing, and order operations in one analytical model.
-🎯 Business Questions the Model Can Support
-- How do sales change by month, year, product, or region?
-- Which customer segments and products contribute to revenue?
-- How does inventory vary across products and periods?
-- How does campaign spending relate to promotional activity?
-- How do actual sales compare with revenue targets?
-- What are the differences between order, invoice, shipment, and delivery dates?
-These are potential analysis use cases enabled by the model, not claims that every report or metric is already implemented.
-📂 Repository Structure
-data_modeling_project/
-├── data_model_project.pbix      # Power BI project
-├── dataset.xlsx                # Source workbook
-├── Screenshot/
-│   ├── before.png              # Original model
-│   └── after.png               # Restructured model
-└── README.md                   # Project documentation
-🚀 How to Explore the Project
-1. Download or clone this repository.
-2. Open data_model_project.pbix using Power BI Desktop.
-3. Switch to Model view to explore fact tables, dimensions, and relationships.
-4. Review the screenshots above to compare the original and restructured models.
-5. If you need to refresh the source data, update the workbook path in Power Query to point to your local copy of dataset.xlsx.
-📌 Key Takeaway
-A good data model is the foundation of reliable analytics. By organizing source tables into reusable facts and dimensions, the model becomes easier to understand, extend, and use across business reporting scenarios.
-🧰 Tools
-Microsoft Power BI Desktop · Power Query · DAX · Microsoft Excel
-👤 Author
-Alaa Ayman Hijazi
-Data Analytics Portfolio Project
-⭐ If you find this project useful, feel free to star the repository!
+The project highlights the importance of building an effective data model before developing analytical reports and dashboards.
+
+---
+
+## 🎯 Project Objectives
+
+- Understand the importance of Data Modeling in Business Intelligence.
+- Transform raw data into structured analytical tables.
+- Apply **Star Schema** modeling principles.
+- Organize data into Fact and Dimension tables.
+- Establish appropriate relationships between tables.
+- Improve data organization and reduce unnecessary redundancy.
+- Support accurate calculations and efficient reporting.
+- Prepare a scalable foundation for future dashboards.
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool | Purpose |
+|---|---|
+| Microsoft Power BI | Data modeling and analysis |
+| Power Query | Data cleaning and transformation |
+| DAX | Calculations and analytical measures |
+| Microsoft Excel | Source dataset |
+| Star Schema | Data model organization |
+
+---
+
+## 🏗️ Data Modeling Process
+
+### 1. Data Exploration
+
+The first step involved examining the source dataset to understand its structure, identify important attributes, and determine how different tables should be connected.
+
+### 2. Data Transformation
+
+Power Query was used to prepare and organize the data for modeling.
+
+This stage focused on creating a structured dataset suitable for analytical purposes.
+
+### 3. Fact & Dimension Tables
+
+The data model was organized using dimensional modeling principles.
+
+**Fact Tables** contain transactional information and numerical values used for analysis.
+
+**Dimension Tables** contain descriptive attributes that provide context for the transactions, such as dates, products, and customers.
+
+### 4. Table Relationships
+
+Relationships were established between the tables to support filtering and calculations across the data model.
+
+Special attention was given to relationship cardinality and filter direction.
+
+### 5. DAX & Analytical Calculations
+
+DAX was used to support analytical calculations and enable the aggregation of business data across different dimensions.
+
+---
+
+## 🔄 Data Model Transformation
+
+One of the main highlights of this project is the comparison between the initial data model and the reorganized model.
+
+### 🔴 Before — Initial Data Model
+
+The initial model illustrates the original table structure before the modeling improvements.
+
+### 🟢 After — Improved Data Model
+
+The reorganized model demonstrates a more structured approach to managing relationships and analytical tables.
+
+The transformation emphasizes the importance of designing a clear and maintainable data model for Business Intelligence solutions.
+
+---
+
+## 💡 Key Concepts Applied
+
+- Data Modeling
+- Star Schema
+- Fact Tables & Dimension Tables
+- Primary Keys & Foreign Keys
+- One-to-Many Relationships
+- Relationship Cardinality
+- Cross-Filter Direction
+- Data Transformation
+- DAX Measures
+- Business Intelligence
+
+---
+
+## 📚 What I Learned
+
+Through this project, I strengthened my understanding of how data modeling influences the quality and reliability of analytical reports.
+
+Key takeaways include:
+
+- Why data modeling is an essential step in Power BI projects.
+- How Fact and Dimension tables work together.
+- How relationships influence filtering and calculations.
+- Why a structured data model is preferable to unnecessary table duplication.
+- How to prepare data for future reporting and dashboard development.
+
+---
+
+## 🚀 Future Improvements
+
+- Develop interactive dashboards based on the data model.
+- Add advanced DAX measures and KPIs.
+- Implement additional time-based analysis.
+- Evaluate model performance with larger datasets.
+- Explore advanced data modeling techniques.
+
+---
+
+## 👨‍💻 Author
+
+**Alaa Ayman Hijazi**
+
+---
+
+⭐ If you find this project interesting, feel free to give the repository a star!
