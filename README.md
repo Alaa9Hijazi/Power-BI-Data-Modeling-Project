@@ -80,15 +80,12 @@ One of the main highlights of this project is the comparison between the initial
 ### 🔴 Before — Initial Data Model
 
 The initial model illustrates the original table structure before the modeling improvements.
-![Before Data Modeling](Screenshot/before.png)
 
 
 ### 🟢 After — Improved Data Model
 
 The reorganized model demonstrates a more structured approach to managing relationships and analytical tables.
-
 The transformation emphasizes the importance of designing a clear and maintainable data model for Business Intelligence solutions.
-![After Data Modeling](Screenshot/after.png)
 
 ---
 
